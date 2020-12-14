@@ -1,5 +1,8 @@
 from copy import deepcopy
 
+"""
+时间复杂度 n^n
+"""
 def maxSizeSlices(slices):
     if len(slices) <= 3:
         return max(slices)
@@ -26,6 +29,6 @@ def maxSizeSlices(slices):
 
 
 if __name__ == "__main__":
-    slices = [9,5,1,7,8,4,4,5,5,8,7,7]
+    slices = [6,3,1,2,6,2,4,3,10,4,1,4,6,5,5,3,4,7,6,5,8]#,7,3,8,8,1,7,1,7,8]
     res = maxSizeSlices(slices)
     print(res)
